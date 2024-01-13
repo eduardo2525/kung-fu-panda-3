@@ -1,0 +1,27 @@
+@use 'header';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button {
+    
+
+    &--secundary {
+        background: rgb(4, 100, 243);
+
+        &:hover {
+            background: rgb(171, 194, 230);
+            color: black;
+            scale: 1.1;
+            transition: 1s ease;
+            font-size: 26px;
+            letter-spacing: 3px;
+        }
+    }
+
+    &--dark {
+        background: rgba(0, 0, 0, 0.8);
+    }
+}
