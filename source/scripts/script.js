@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+    const button = document.getElementById('butto');
+    const paragrafo = document.querySelector('.paragrafo--none');
+
     document.querySelector('a[href="#Trailer"]').addEventListener('click', (e) => {
         e.preventDefault()
 
@@ -22,4 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
             shows.style.display = 'none';
         }
     });
+
+    button.addEventListener('click', () => {
+        paragrafo.style.display = 'block';
+        button.style.display = 'none';
+    })
 });
