@@ -5,23 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="source/imagens/kung fu panda 3__logo.png" type="image/x-icon">
     <title>Kung Fu Panda 3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="build/styles/main.css">
 </head>
 <body>
     <header class="header">
         <div class="header__container">
             <h1>
-                <img class="header__logo" src="source/imagens/kung fu panda 3__logo.png" alt="Kung Fu Panda 3 logo">
+                <img class="header__container__logo" src="source/imagens/kung fu panda 3__logo.png" alt="Kung Fu Panda 3 logo">
             </h1>
-            <ul class="header__links">
-                <li class="header__links__item button--secundary">
-                    <a class="button" href="#">Trailer</a>
+            <ul class="header__container__links">
+                <li class="header__container__links__item button--secundary">
+                    <a class="button" href="#Trailer">Trailer</a>
                 </li>
-                <li class="header__links__item button--dark">
+                <li class="header__container__links__item button--dark">
                     <a class="button" href="#">Entrar</a>
                 </li>
             </ul>
         </div>
     </header>
+    <section class="carousel">
+        <div class="carousel__container">
+            <div id="carousel__kung" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel__kung" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel__kung" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel__kung" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel__kung" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="source/imagens/kung-fu-panda-3-movie-1920x1080.jpg" class="d-block w-100" alt="imagem kung fu panda">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="source/imagens/kung fu panda 3-thumb.jpg" class="d-block w-100" alt="imagem kung fu panda">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="source/imagens/kung-fu-panda-3-movie-2016-1920x1080.jpg" class="d-block w-100" alt="imagem kung fu panda">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="source/imagens/kung-fu-panda-3-wallpapers-1920x1080.jpg.crdownload" class="d-block w-100" alt="imagem kung fu panda">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel__kung" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel__kung" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="shows">
+
+    </section>
+    <section class="Trailer" id="Trailer">
+        <div class="Trailer__container">
+            <iframe class="Trailer__container__iframe" width="1264" height="720" src="https://www.youtube.com/embed/q75bGipJzIg" title="Kung Fu Panda 3 | Segundo Trailer Oficial | Dublado HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="source/scripts/script.js"></script>
 </body>
 </html>
