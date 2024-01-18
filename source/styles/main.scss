@@ -1,6 +1,5 @@
 @use 'header';
 @use 'carousel';
-@use 'shows';
 @use 'Trailer';
 @use 'filme';
 
@@ -30,6 +29,21 @@ html {
         }
     }
 
+    &--third {
+        background: rgba($color: #354cce, $alpha: 0.8);
+        width: 300px;
+        color: white;
+        border: none;
+        border-bottom: 2px solid black;
+        border-radius: 6px;
+
+        &:hover {
+            background: rgba($color: #000000, $alpha: 0.5);
+            color: white;
+            border-bottom: 2px solid white;
+        }
+    }
+
     &--dark {
         background: rgba(0, 0, 0, 0.8);
     }
@@ -44,4 +58,17 @@ html {
     text-align: center;
     font-size: 28px;
     color: white;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.shows__list__item--is-active {
+    display: block;
+}
+
+.shows__tabs__button--is-active {
+    border-bottom: 2px solid white;
+    background: black;
 }
